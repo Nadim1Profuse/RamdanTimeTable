@@ -16,10 +16,11 @@ const DateCard = (props) => {
         border="dark"
         style={{
           textAlign: "center",
-          width: "2.5rem",
-          height: "3.0rem",
+          width: "2.25rem",
+          height: "2.75rem",
           backgroundColor: "azure",
           cursor: "pointer",
+          paddingBottom:"3px"
         }}
         color="white"
         onClick={onClick}
@@ -40,12 +41,12 @@ const DateCard = (props) => {
             {props.date}
           </p>
           <p
-            style={{ fontWeight: "bolder", fontSize: ".70rem", marginTop: "2.5px" }}
+            style={{ fontWeight: "bolder", fontSize: ".70rem", marginTop: "2.0px",marginBottom:"0px" }}
             tabIndex={props.ramdan}
           >
             {" "}
-            <span tabIndex={props.ramdan} style={{ fontWeight: "bolder" }}>{props.ramdan}</span>
-            <br /> رمضان
+            <span tabIndex={props.ramdan} style={{ fontWeight: "bolder",marginBottom:"0" }}>{props.ramdan}</span>
+             <p style={{marginBottom:"2px",marginTop:"0px",fontWeight:"bolder"}}>رمضان</p>
           </p>
     
       </Card>

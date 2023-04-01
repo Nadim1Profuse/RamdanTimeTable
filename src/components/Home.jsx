@@ -46,15 +46,15 @@ const Home = () => {
           justifyContent: "center",
           flexWrap: "wrap",
           "& > :not(style)": {
-            m: 0.25,
+            
             width: 700,
-            height: 695,
+            height: 680,
           },
           backgroundColor: "#363945",
         }}
       >
         <Paper
-          style={{ padding: "15px", backgroundColor: "#fce9e9" }}
+          style={{ padding: "20px", backgroundColor: "#fce9e9" }}
           elevation={2}
         >
           <h1 style={{ fontFamily: "Fredericka the Great" }}>
@@ -63,7 +63,7 @@ const Home = () => {
           <Card
             sx={{
               maxWidth: 500,
-              margin: "5px auto",
+              margin: " auto",
               border: "3px solid green",
               borderRadius: "5px",
               elevation: 18,
@@ -91,10 +91,10 @@ const Home = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Click See </td>
-                  <td>On time </td>
-                  <td>Date Table</td>
-                  <td>To Duas </td>
+                  <td> </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   {ramdanDetails.slice(0, 3).map((roza) => (
                     <td key={roza.ramadan}>
                       <DateCard

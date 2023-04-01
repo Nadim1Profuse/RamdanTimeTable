@@ -9,7 +9,7 @@ export default function TodayModel(props) {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="medium"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -24,7 +24,7 @@ export default function TodayModel(props) {
         <Modal.Title id="contained-modal-title-vcenter">
           <h1>
             {props.date}
-            {""} {props.day} || Ramadan {props.ramadan}
+            {""} {props.day} <br/> Ramadan {props.ramadan}
           </h1>
         </Modal.Title>
       </Modal.Header>
