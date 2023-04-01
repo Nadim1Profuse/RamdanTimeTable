@@ -3,22 +3,43 @@ import Table from "react-bootstrap/Table";
 import DateCard from "./DateCard";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import image from "./ramadan-2023.jpg";
+import image from "../files/images/ramadan-2023.jpg";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import TodayModel from "./TodayModel";
-import { timeTable } from "./TimeTableData";
+import { timeTable } from "../files/TimeTableData";
+import Footer from "./Footer";
 
 const Home = () => {
   const ramdanDetails = timeTable;
+  const date = new Date().toLocaleDateString("en-ZA", {
+    day: "numeric",
+    month: "long",
+  });
+  console.log(date);
+  const todayRoza = ramdanDetails.filter((roza) => roza.date === date);
+  console.log("todayRoza", todayRoza);
+  const [selectedRoza, setSelectedRoza] = useState(todayRoza[0]);
+
   const [modalShow, setModalShow] = useState(true);
-  const handleClick = (index) => {
+  const handleClick = (roza) => {
     setModalShow(true);
-    console.log("index of ckicke=", index);
+    setSelectedRoza(ramdanDetails[roza - 1]);
   };
+
   return (
     <>
-      <TodayModel show={modalShow} onHide={() => setModalShow(false)} />
+      <TodayModel
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        date={selectedRoza.date}
+        day={selectedRoza.day}
+        ramadan={selectedRoza.ramadan}
+        sehri={selectedRoza.sehri}
+        iftar={selectedRoza.iftar}
+        dua={selectedRoza.dua}
+        currentRoza={selectedRoza}
+      />
       <Box
         sx={{
           display: "flex",
@@ -75,7 +96,7 @@ const Home = () => {
                   <td>Date And</td>
                   <td>To See Duas</td>
                   {ramdanDetails.slice(0, 3).map((roza) => (
-                    <td>
+                    <td key={roza.ramadan}>
                       <DateCard
                         date={roza.date}
                         ramdan={roza.ramadan}
@@ -86,7 +107,7 @@ const Home = () => {
                 </tr>
                 <tr>
                   {ramdanDetails.slice(3, 10).map((roza) => (
-                    <td>
+                    <td key={roza.ramadan}>
                       <DateCard
                         date={roza.date}
                         ramdan={roza.ramadan}
@@ -97,7 +118,7 @@ const Home = () => {
                 </tr>
                 <tr>
                   {ramdanDetails.slice(10, 17).map((roza) => (
-                    <td>
+                    <td key={roza.ramadan}>
                       <DateCard
                         date={roza.date}
                         ramdan={roza.ramadan}
@@ -108,7 +129,7 @@ const Home = () => {
                 </tr>
                 <tr>
                   {ramdanDetails.slice(17, 24).map((roza) => (
-                    <td>
+                    <td key={roza.ramadan}>
                       <DateCard
                         date={roza.date}
                         ramdan={roza.ramadan}
@@ -119,7 +140,7 @@ const Home = () => {
                 </tr>
                 <tr>
                   {ramdanDetails.slice(24).map((roza) => (
-                    <td>
+                    <td key={roza.ramadan}>
                       <DateCard
                         date={roza.date}
                         ramdan={roza.ramadan}
@@ -131,14 +152,8 @@ const Home = () => {
               </tbody>
             </Table>
           </Card>
-          <hr style={{ margin: "0" }} />
-          <div style={{ textAlign: "end", margin: "10px", marginTop: "2px" }}>
-            Created
-            <br />
-            by...
-            <br />
-            Nadeem 9860206440
-          </div>
+
+          <Footer />
         </Paper>
       </Box>
     </>
