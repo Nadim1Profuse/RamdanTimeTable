@@ -62,7 +62,7 @@ const Home = () => {
           </h1>
           <Card
             sx={{
-              maxWidth: 500,
+              maxWidth: 450,
               margin: " auto",
               border: "3px solid green",
               borderRadius: "5px",

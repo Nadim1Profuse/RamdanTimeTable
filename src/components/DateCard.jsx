@@ -29,7 +29,7 @@ const DateCard = (props) => {
           <p
             style={{
               fontWeight: "bold",
-              fontSize: ".45rem",
+              fontSize: ".38rem",
               backgroundColor: "black",
               color: "white",
               marginBottom: "0",
