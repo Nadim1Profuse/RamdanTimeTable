@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import Footer from "./Footer";
 
 export default function TodayModel(props) {
-  const todaysRoza=props.currentRoza
+  const todaysRoza = props.currentRoza;
   console.log(todaysRoza);
   return (
     <Modal
@@ -14,7 +14,11 @@ export default function TodayModel(props) {
       centered
     >
       <Modal.Header
-        style={{ backgroundColor: "azure", color: "#363945",fontFamily: 'Baloo Thambi 2' }}
+        style={{
+          backgroundColor: "azure",
+          color: "#363945",
+          fontFamily: "Baloo Thambi 2",
+        }}
         closeButton
       >
         <Modal.Title id="contained-modal-title-vcenter">
@@ -40,12 +44,14 @@ export default function TodayModel(props) {
               backgroundColor: "#363945",
               textAlign: "center",
               color: "azure",
-              fontWeight:"bold"
+              fontWeight: "bold",
             }}
           >
             Sehri سحري
           </Card.Header>
-          <Card.Body style={{fontFamily: 'Baloo Thambi 2',textAlign:"center"}}>
+          <Card.Body
+            style={{ fontFamily: "Baloo Thambi 2", textAlign: "center" }}
+          >
             <Card.Text>
               <h6>
                 Khatm Sehri <br /> ختم سحري
@@ -70,12 +76,14 @@ export default function TodayModel(props) {
               backgroundColor: "#363945",
               textAlign: "center",
               color: "azure",
-              fontWeight:"bold"
+              fontWeight: "bold",
             }}
           >
             Iftar إفطار
           </Card.Header>
-          <Card.Body style={{fontFamily: 'Baloo Thambi 2',textAlign:"center"}}>
+          <Card.Body
+            style={{ fontFamily: "Baloo Thambi 2", textAlign: "center" }}
+          >
             <Card.Text>
               <h6>
                 Waqt-e-Iftar <br /> وقت إفطار
@@ -99,13 +107,13 @@ export default function TodayModel(props) {
         <Card.Header style={{ backgroundColor: "#363945", color: "azure" }}>
           Dua دعا
         </Card.Header>
-        <Card.Body style={{fontFamily: 'Baloo Thambi 2'}}>
-          <Card.Text >{props.dua}</Card.Text>
+        <Card.Body style={{ fontFamily: "Baloo Thambi 2" }}>
+          <Card.Text>{props.dua}</Card.Text>
         </Card.Body>
       </Card>
       <div style={{ margin: "10px", marginBottom: "2px", padding: "15px" }}>
         <h6> Isaal-E-Sawab </h6>
-        <p style={{fontFamily: 'Baloo Thambi 2'}}>
+        <p style={{ fontFamily: "Baloo Thambi 2" }}>
           Marhum Bashir Khan,Begum Bee.
           <br />
           Marhum Rashid Khan, Riyaz Khan, Saleem Khan.

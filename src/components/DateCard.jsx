@@ -16,8 +16,8 @@ const DateCard = (props) => {
         border="dark"
         style={{
           textAlign: "center",
-          width: "3.1rem",
-          height: "3.5rem",
+          width: "2.5rem",
+          height: "3.0rem",
           backgroundColor: "azure",
           cursor: "pointer",
         }}
@@ -28,7 +28,7 @@ const DateCard = (props) => {
           <p
             style={{
               fontWeight: "bold",
-              fontSize: ".58rem",
+              fontSize: ".45rem",
               backgroundColor: "black",
               color: "white",
               marginBottom: "0",
@@ -40,7 +40,7 @@ const DateCard = (props) => {
             {props.date}
           </p>
           <p
-            style={{ fontWeight: "bolder", fontSize: ".75rem", marginTop: "2.5px" }}
+            style={{ fontWeight: "bolder", fontSize: ".70rem", marginTop: "2.5px" }}
             tabIndex={props.ramdan}
           >
             {" "}

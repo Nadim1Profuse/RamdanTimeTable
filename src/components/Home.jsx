@@ -46,8 +46,8 @@ const Home = () => {
           justifyContent: "center",
           flexWrap: "wrap",
           "& > :not(style)": {
-            m: 1,
-            width: 550,
+            m: 0.25,
+            width: 700,
             height: 695,
           },
           backgroundColor: "#363945",
@@ -62,7 +62,7 @@ const Home = () => {
           </h1>
           <Card
             sx={{
-              maxWidth: 525,
+              maxWidth: 500,
               margin: "5px auto",
               border: "3px solid green",
               borderRadius: "5px",
@@ -91,10 +91,10 @@ const Home = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Click time </td>
-                  <td>On Table</td>
-                  <td>Date And</td>
-                  <td>To See Duas</td>
+                  <td>Click See </td>
+                  <td>On time </td>
+                  <td>Date Table</td>
+                  <td>To Duas </td>
                   {ramdanDetails.slice(0, 3).map((roza) => (
                     <td key={roza.ramadan}>
                       <DateCard
