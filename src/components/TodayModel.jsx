@@ -12,6 +12,7 @@ export default function TodayModel(props) {
       size="medium"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      
     >
       <Modal.Header
         style={{
@@ -37,7 +38,7 @@ export default function TodayModel(props) {
       >
         <Card
           border="success"
-          style={{ width: "18rem", margin: "10px", marginBottom: "0px" }}
+          style={{ width: "18rem", margin: "10px", marginBottom: "0px", backgroundColor:"#e1e8f0"}}
         >
           <Card.Header
             style={{
@@ -69,7 +70,7 @@ export default function TodayModel(props) {
         </Card>{" "}
         <Card
           border="success"
-          style={{ width: "18rem", margin: "10px", marginBottom: "0px" }}
+          style={{ width: "18rem", margin: "10px", marginBottom: "0px", backgroundColor:"#e1e8f0"}}
         >
           <Card.Header
             style={{
@@ -102,7 +103,7 @@ export default function TodayModel(props) {
       </Modal.Body>
       <Card
         border="dark"
-        style={{ width: "18rem", textAlign: "center", margin: "5px auto" }}
+        style={{ width: "18rem", textAlign: "center", margin: "5px auto" ,backgroundColor:"#e6dbc9"}}
       >
         <Card.Header style={{ backgroundColor: "#363945", color: "azure" }}>
           Dua دعا
