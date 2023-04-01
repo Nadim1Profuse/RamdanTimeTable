@@ -77,7 +77,7 @@ export const timeTable = [
     ramadan: "10",
     sehri: "4:48",
     iftar: "6:33",
-    dua: "Ae Allah Hamari Roze Jaisi Ibadat Ko Darja e Maqbuliyat Ata Farna.",
+    dua: "Ae Allah Hamari Roze Jaisi Ibadat Ko Darja e Maqbuliyat Ata Farma.",
   },
   {
     date: "3 April",
