@@ -23,7 +23,7 @@ const DateCard = (props) => {
           paddingBottom:"3px"
         }}
         color="white"
-        onClick={onClick}
+        // onClick={onClick}
       >
        
           <p
@@ -35,7 +35,7 @@ const DateCard = (props) => {
               marginBottom: "0",
             }}
             tabIndex={props.ramdan}
-            
+            onClick={onClick}
           >
             {" "}
             {props.date}
@@ -43,10 +43,11 @@ const DateCard = (props) => {
           <p
             style={{ fontWeight: "bolder", fontSize: ".70rem", marginTop: "2.0px",marginBottom:"0px" }}
             tabIndex={props.ramdan}
+            onClick={onClick}
           >
             {" "}
-            <span tabIndex={props.ramdan} style={{ fontWeight: "bolder",marginBottom:"0" }}>{props.ramdan}</span>
-             <p style={{marginBottom:"2px",marginTop:"0px",fontWeight:"bolder"}}>رمضان</p>
+            <span onClick={onClick} tabIndex={props.ramdan} style={{ fontWeight: "bolder",marginBottom:"0" }}>{props.ramdan}</span>
+             <p onClick={onClick} tabIndex={props.ramdan} style={{marginBottom:"2px",marginTop:"0px",fontWeight:"bolder"}}>رمضان</p>
           </p>
     
       </Card>

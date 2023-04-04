@@ -93,7 +93,7 @@ export const timeTable = [
     ramadan: "12",
     sehri: "4:46",
     iftar: "6:34",
-    dua: "Ae Allah Jhut, Gibat, Kina, Takabbur aur Tamam Shaitani Amal Se Hamari Hifazat Ata.",
+    dua: "Ae Allah Jhut, Gibat, Kina, Takabbur aur Tamam Shaitani Amal Se Hamari Hifazat Farma.",
   },
   {
     date: "5 April",
@@ -221,7 +221,7 @@ export const timeTable = [
     ramadan: "28",
     sehri: "4:30",
     iftar: "6:39",
-    dua: "Ae Allah Teri Azmat Aur Teri Badai Hamare Dilo Me Dalde.",
+    dua: "Ae Allah Teri Azmat Aur Teri Badhai Hamare Dilo Me Dalde.",
   },
   {
     date: "21 April",
